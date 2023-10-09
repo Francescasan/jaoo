@@ -26,7 +26,7 @@ public class Circle {
 	 */
 	public Circle(double radius) {
 		// TODO: initialize the current circle radius
-//    	 this.radius= radius; da me
+		this.radius = radius;
 	}
 
 	/**
@@ -35,11 +35,12 @@ public class Circle {
 	 * @return the circle area
 	 */
 	public double area() {
-		/*
-		 * fatto da me double power = 2; area = Math.PI * radius; area = Math.pow(area,
-		 * power); return area;
-		 */
-		throw new UnsupportedOperationException("Not yet implemented");
+		double power = 2;
+		area = Math.PI * radius;
+		area = Math.pow(area, power);
+		return area;
+
+		// throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 	/**
@@ -48,8 +49,8 @@ public class Circle {
 	 * @return the circle perimeter
 	 */
 	public double perimeter() {
-// paramiter =Math.PI * radius*2;  fatto da me
-		// return paramiter
-		throw new UnsupportedOperationException("Not yet implemented");
+		paramiter = Math.PI * radius * 2;
+		return paramiter;
+		// throw new UnsupportedOperationException("Not yet implemented");
 	}
 }

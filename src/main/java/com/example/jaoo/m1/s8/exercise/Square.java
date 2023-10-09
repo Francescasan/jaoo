@@ -32,10 +32,11 @@ public class Square {
 	 * @return the square area
 	 */
 	public double area() {
-		/*
-		 * area = side * 2; return side;
-		 */
-		throw new UnsupportedOperationException("Not yet implemented");
+		area = Math.pow(side, 2);
+
+		return area;
+
+		// throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 	/**
@@ -44,9 +45,9 @@ public class Square {
 	 * @return the square perimeter
 	 */
 	public double perimeter() {
-		/*
-		 * perimeter = side * 4; return perimeter;
-		 */
-		throw new UnsupportedOperationException("Not yet implemented");
+		perimeter = side * 4;
+		return perimeter;
+
+		// throw new UnsupportedOperationException("Not yet implemented");
 	}
 }
