@@ -11,13 +11,21 @@ package com.example.jaoo.m3.s9.ex2;
  * Abstract base class
  */
 public abstract class Person {
-    /**
-     * Canonical constructor
-     * 
-     * @param firstName person first name
-     * @param lastName  person last name
-     */
-    protected Person(String firstName, String lastName) {
-        // TODO
-    }
+	/**
+	 * Canonical constructor
+	 * 
+	 * @param firstName person first name
+	 * @param lastName  person last name
+	 */
+	protected String firstName, lastName;
+
+	protected Person(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + "]" + "[lastName=" + lastName + "]";
+	}
 }

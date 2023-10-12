@@ -10,13 +10,21 @@ import java.util.logging.Logger;
 /**
  * TODO: Flat is-a Conditioning
  */
-public class Flat {
-    private static final Logger log = Logger.getGlobal();
+public class Flat implements Conditioning {
+	private static final Logger log = Logger.getGlobal();
+	private int temp;
 
-    /**
-     * No-arg constructor
-     */
-    public Flat() {
-        log.info("Flat created");
-    }
+	/**
+	 * No-arg constructor
+	 */
+	public Flat() {
+		log.info("Flat created");
+	}
+
+	@Override
+	public void seTemperature(int temp) {
+		this.temp = temp;
+		System.out.println("Temperature Flat" + temp);
+	}
+
 }

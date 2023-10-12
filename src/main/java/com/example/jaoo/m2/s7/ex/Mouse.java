@@ -11,5 +11,20 @@ package com.example.jaoo.m2.s7.ex;
  * Any class derives from Object, implicitly or explicitly
  */
 public class Mouse {
-    // TODO: override toString()
+	private String name;
+	private String owner;
+	private int age;
+
+	// TODO: override toString()
+	public Mouse(String name, String owner, int age) {
+		this.name = name;
+		this.owner = owner;
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "The name of the mouse is " + this.name + ". The age of the mouse is " + this.age
+				+ ". The mouse of the dog is " + this.owner;
+	}
 }
